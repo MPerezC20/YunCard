@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yun CARD</title>
+    
+    <link rel="icon" type="image/png" href="Image/icon.jpg"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <header class="top-bar">
+            <div class="lang-selector">
+                <button class="btn-lang active" onclick="changeLang('es', this)">Esp</button>
+                <button class="btn-lang" onclick="changeLang('en', this)">Ing</button>
+                <button class="btn-lang" onclick="changeLang('jp', this)">Jap</button>
+            </div>
+            <div class="title-container">
+                <img src="Image/Títule.png" alt="Yun CARD" class="title-img">
+            </div>
+        </header>
+
+        <div class="card-content">
+            <section class="left-col">
+                <h1 class="lang" data-es="¿Quién soy?" data-en="Who am I?" data-jp="自己紹介">¿Quién soy?</h1>
+                <p class="lang" 
+                   data-es="¡Hola! Llámame Yun. Soy aspirante a ilustrador. Me encanta dibujar pequeños personajes con mi propio estilo, darles formas bonitas y hacer que parezcan vivos. Amante de los zorros."
+                   data-en="Hi! Call me Yun. I'm an aspiring illustrator. I love drawing small characters in my own style, giving them cute shapes and making them feel alive. Fox lover."
+                   data-jp="こんにちは！ユンと呼んでください。イラストレーター志望です。自分のスタイルで小さなキャラクターを描き、可愛い形を与えて、生き生きとさせることが大好きです。キツネが大好きです。">
+                   ¡Hola! Llámame Yun. Soy aspirante a ilustrador. Me encanta dibujar pequeños personajes con mi propio estilo, darles formas bonitas y hacer que parezcan vivos. Amante de los zorros.
+                </p>
+            </section>
+
+            <section class="center-col">
+                <img src="Image/YunCh.png" alt="Yun Character" class="main-char">
+                <div class="commissions">
+                    <p class="lang" data-es="¡Comisiones!" data-en="Commissions!" data-jp="コミッション！">¡Comisiones!</p>
+                    <a href="#comisiones-area">
+                        <img src="Image/ButtonAb.png" alt="Ver comisiones" class="arrow-img">
+                    </a>
+                </div>
+            </section>
+
+            <section class="right-col">
+                <h2 class="lang" data-es="Mira más de mi arte/contacto" data-en="See more of my art/contact" data-jp="アート・連絡先">Mira más de mi arte/contacto</h2>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/yun.yunnny/"><img src="Image/Ig.png" alt="Instagram"></a>
+                    <a href="https://patreon.com/Yun304"><img src="Image/Pa.png" alt="Patreon"></a>
+                    <a href="https://ko-fi.com/yunyunny2004"><img src="Image/Kff.png" alt="Koffi"></a>
+                    <a href="https://es.fiverr.com/yoru_ming"><img src="Image/Fi.png" alt="Fiverr"></a>
+                    <a href="https://vgen.co/YunYunny304"><img src="Image/Vg.png" alt="Vgen"></a>
+                    <a href="https://x.com/YunYunny304"><img src="Image/X.png" alt="X"></a>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div id="comisiones-area" class="horizontal-slider">
+        
+        <section id="comisiones-section" class="carousel-slide commissions-page">
+            <h1 class="lang commissions-title" data-es="Comisiones:" data-en="Commissions:" data-jp="コミッション:">Comisiones:</h1>
+            
+            <div class="commissions-grid">
+                <img src="Image/completo.png" alt="Comisiones" class="commissions-char">
+                <img src="Image/fondo.png" class="price-imge pos-fondo">
+                <img src="Image/shop.png" class="price-img pos-head">
+                <img src="Image/half.png" class="price-img pos-half">
+                <img src="Image/body.png" class="price-img pos-full">
+
+                <a href="#procesos-section" class="nav-link">
+                    <img src="Image/right.png" class="side-arrow" alt="Siguiente">
+                </a>
+            </div>
+        </section>
+
+        <section id="procesos-section" class="carousel-slide processes-page">
+            <a href="#comisiones-section" class="nav-link-back">
+                <img src="Image/left.png" class="back-arrow" alt="Volver">
+            </a>
+
+            <div class="processes-grid">
+                <div class="col-left">
+                    <h2 class="lang red-title" data-es="Que se permite y que no" data-en="Do's and Don'ts" data-jp="許可事項と禁止事項">Que se permite y que no</h2>
+                    <img src="Image/tabla.png" alt="Tabla" class="tabla-permisos">
+                    <h2 class="lang red-title" data-es="Metodos de pago" data-en="Payment Methods" data-jp="お支払い方法">Metodos de pago</h2>
+                    <div class="pay-icons">
+                        <img src="Image/PuntoPago.png" alt="Punto Pago">
+                        <img src="Image/PayPal.png" alt="PayPal">
+                    </div>
+                </div>
+
+                <div class="col-right">
+                    <div class="info-box">
+                        <h3 class="lang red-title" data-es="Proceso" data-en="Process" data-jp="プロセス">Proceso</h3>
+                        <ul>
+                            <li class="lang" 
+                                data-es="Se abona la mitad del pago al pedir la comisión, lo restante se pagará antes de enviar el archivo culminado." 
+                                data-en="Half of the payment is made when ordering, the rest will be paid before sending the finished file." 
+                                data-jp="注文時に半額を支払いい、残額は完成したファイルを送信する前に支払われます。">
+                                Se abona la mitad del pago al pedir la comisión, lo restante se pagará antes de enviar el archivo culminado.
+                            </li>
+                            <li class="lang" 
+                                data-es="El plazo del dibujo durará dependiendo de la complejidad del pedido." 
+                                data-en="The drawing timeframe will depend on the complexity of the order." 
+                                data-jp="納期は注文の複雑さによって異なります。">
+                                El plazo del dibujo durará dependeindo de la complejidad del pedido.
+                            </li>
+                            <li class="lang" 
+                                data-es="Se envian imágenes del proceso con marca de agua." 
+                                data-en="WIP images with watermarks will be sent during the process." 
+                                data-jp="透かし入りの進捗画像が送信されます。">
+                                Se envian imágenes del proceso con marca de agua.
+                            </li>
+                            <li class="lang" 
+                                data-es="El archivo es enviado en formato PNG o JPG, a través de correo para asegurar la calidad." 
+                                data-en="The file is sent in PNG or JPG format via email to ensure quality." 
+                                data-jp="品質を確保するため、ファイルはメールでPNGまたはJPG形式で送信されます。">
+                                El archivo es enviado en formato PNG o JPG, a través de correo para asegurar la calidad de la llustración.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-box">
+                        <h3 class="lang red-title" data-es="Importante!!" data-en="Important!!" data-jp="重要！！">Importante!!</h3>
+                        <ul>
+                            <li class="lang" 
+                                data-es="En caso de querer hacer un cambio significativo en el dibujo, tendrá un costo adicional." 
+                                data-en="Significant changes to the drawing will have an additional cost." 
+                                data-jp="大幅な変更を希望される場合は、追加料金が発生します。">
+                                En caso de querer hacer un cambio significativo en el dibujo, tendrá un costo adicional.
+                            </li>
+                            <li class="lang" 
+                                data-es="Al hacer el pedido, este debe incluir imágenes referenciales (poses, paleta de colores, expresiones, etc)." 
+                                data-en="When ordering, please include reference images (poses, color palette, expressions, etc)." 
+                                data-jp="注文時には、参考画像（ポーズ、カラーパレット、表情など）を含めてください。">
+                                Al hacer el pedido, este debe incluir imágenes referenciales (poses, paleta de colores, expresiones, etc), dejar escrito todo lo necesario para realizar la comisión.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        function changeLang(lang, btn) {
+            document.querySelectorAll('.btn-lang').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            document.querySelectorAll('.lang').forEach(el => {
+                const text = el.getAttribute(`data-${lang}`);
+                if (text) el.innerText = text;
+            });
+        }
+    </script>
+
+</body>
+</html>
